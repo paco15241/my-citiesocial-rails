@@ -1,4 +1,5 @@
 class Product < ApplicationRecord
+  acts_as_paranoid
   include CodeGenerator
 
   validates :name, presence: true
